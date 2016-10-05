@@ -3,12 +3,8 @@ var input = $("")
 input.keydown(function(e) {	
   if (e.keyCode == "13") {
     var valueToSave = input.val();
-    addListItem("davidsList", valueToSave);
+    addListItem(valueToSave);
   }
-})
-
-clearButton.click(function(e) {	
-  deleteValue("davidsList")
 })
 
 onNewListItem("davidsList", function(value) {
